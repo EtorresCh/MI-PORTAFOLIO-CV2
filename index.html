@@ -12,12 +12,13 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="JS/inicio.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav class="navbar navbar-custom navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="../HTML/inicio.html">
-                <img src="imagenes/logo-portafolio2.JPG" alt="Logo del portafolio" width="120" class="img-fluid">
+                <img src="imagenes/logo-portafolio2-removebg-preview.png" alt="Logo del portafolio" width="120" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +71,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="display-2 small-text" style="color: #000000 " >Mi <span style="color: rebeccapurple;">  Portafolio <span style="color: rgb(0, 0, 0);">  de proyectos </span>      </h2>
+                    <h2 class="display-2 small-text" style="color: #000000 " >Mi <span style="color: rgb(97, 8, 8);">  Portafolio <span style="color: rgb(0, 0, 0);">  de proyectos </span></span> </h2>
                     <p class="lead">Aquí hay algunos de los mas recientes en el desarrollo de Software  y soluciones tecnologicas.</p>
                     <hr class="my-4">                    
                 </div>
@@ -313,7 +314,7 @@
 
     <section class="py-5 bg-light text-center animate-section">
         <div class="container">
-            <h2 class="display-2 small-text" style="color: #000000 ">Páginas Web <span style="color: rebeccapurple;">Responsivas </span></h2>
+            <h2 class="display-2 small-text" style="color: #000000 ">Páginas Web <span style="color: rgb(119, 5, 5);">Responsivas </span></h2>
             <p class="lead text-muted">Adaptables para todo tipo de dispositivos: teléfono, monitor, tablet.</p>
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-3">
@@ -328,42 +329,71 @@
             </div>
         </div>
     </section>
-  <section id="contact" class="py-5">
+<section id="contact" class="py-5 ">
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="display-4 fw-bold">Contacto</h2>
+                <h2 class="display-5 small-text" style="color: #ffffff ">¿Interesado en <span style="color: rgb(119, 5, 5);">Trabajar Juntos </span> <span style="color: rgb(255, 255, 255);"> ?</span></h2>
                 <p class="lead">Ponte en contacto conmigo para más información.</p>
             </div>
         </div>
         <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 mb-4">
-                <img src="imagenes/5124556.jpg" class="img-fluid contact-image" alt="Imagen de contacto">
+            <div class="col-lg-4 mb-4">
+                <div class="card ">
+                    <div class="card-body">
+                        <h4 class="card-title">Información de Contacto</h4>
+                        <br>
+                        <div class="mb-4">
+                            <label for="contactEmail" class="form-label"> 
+                                <i class="fas fa-envelope"></i> 
+                                <label for="name" class="form-label">edgar73522538@gmail.com</label>
+                            </label>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contactPhone" class="form-label">
+                                <i class="fas fa-phone"></i>
+                                <label for="name" class="form-label">+51 981 902 522</label>
+                            </label>
+                        </div>
+                        <div class="mb-4">
+                            <label for="contactLocation" class="form-label">
+                                <i class="fas fa-map-marker-alt"></i> 
+                                <label for="name" class="form-label">Chiclayo, Perú</label>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6 mb-4 " >
-                <form >
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+            <div class="col-lg-6 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje" required></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje" required></textarea>
-                    </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
-    <button onclick="Function()" id="backToTopBtn" class="btn btn-primary">↑</button>
+<button onclick="Function()" id="backToTopBtn" class="btn btn-primary">
+    <i class="fas fa-chevron-up"></i>
+</button>
 
     </section>
 
@@ -373,17 +403,24 @@
                 <div class="col-md-6 text-center text-md-start">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled">
-                        <li><a href="mailto:edgar73522538@gmail.com" class="text-secondary">edgar73522538@gmail.com</a></li>
-                        <li><a href="https://wa.me/51981902522" class="text-secondary" target="_blank">+51 981 902 522</a>
+                        <li>
+                            <a href="mailto:edgar73522538@gmail.com" class="text-dark">
+                                <i class="fas fa-envelope"></i>  edgar73522538@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/51981902522" class="text-dark" target="_blank">
+                                <i class="fab fa-whatsapp"></i>  +51 981 902 522
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <h5>Sígueme</h5>
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#" class="text-dark">Facebook</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-dark">Twitter</a></li>
-                        <li class="list-inline-item"><a href="#" class="text-dark">LinkedIn</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
