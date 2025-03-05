@@ -113,65 +113,61 @@ body {
    position: relative;
 }
 #skills .progress {
-    height: 25px;
-    background-color: #e9ecef;
-    border-radius: 5px;
-    overflow: hidden;
+  height: 25px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-
-
-
-/* Cambiar el color de las barras de progreso para cada tecnología */
-#skills  .progress-bar-html {
-  background-color: #e34c26; /* Color para HTML */
+#skills .progress-bar {
   line-height: 25px;
   font-size: 1rem;
-  color: white;
+  text-align: center;
 }
 
-#skills  .progress-bar-css {
-  background-color: #264de4; /* Color para CSS */
-  line-height: 25px;
-  font-size: 1rem;
-  color: white;
+#skills .progress-bar-html { background-color: #e34c26; color: white; }
+#skills .progress-bar-css { background-color: #264de4; color: white; }
+#skills .progress-bar-js { background-color: #f0db4f; color: white; }
+#skills .progress-bar-java { background-color: #007396; color: white; }
+#skills .progress-bar-bootstrap { background-color: #563d7c; color: white; }
+#skills .progress-bar-php { background-color: #777bb4; color: white; }
+#skills .progress-bar-db { background-color: #4db33d; color: white; }
+
+.slider {
+  width: 75vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
 }
 
-#skills  .progress-bar-js {
-  background-color: #f0db4f; /* Color para JavaScript */
-  color: black; /* Color del texto para JavaScript */
-  line-height: 25px;
-  font-size: 1rem;
-  color: white;
+.slider .slide-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  -webkit-animation: scroll 30s linear infinite;
+  width: calc(200px * 14);
 }
 
-#skills  .progress-bar-java {
-  background-color: #007396; /* Color para Java */
-  line-height: 25px;
-  font-size: 1rem;
-  color: white;
+.slider .slide {
+  width: 200px;
 }
 
-#skills .progress-bar-bootstrap {
-  background-color: #563d7c; /* Color para Bootstrap */
-  line-height: 25px;
-  font-size: 1rem;
-  color: white;
+.slider .slide img {
+  width: 100%;
+  padding: 10px;
 }
 
-#skills  .progress-bar-php {
-  background-color: #777bb4; /* Color para PHP */
-  line-height: 25px;
-  font-size: 1rem;
-  color: white;
+@keyframes scroll {
+  0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+  100% {
+      -webkit-transform: translateX(calc(-200px * 7));
+      transform: translateX(calc(-200px * 7));
+  }
 }
 
-#skills  .progress-bar-db {
-  background-color: #4db33d; /* Color para Base de datos */
-  line-height: 25px;
-  font-size: 1rem;
-  color: white;
-}
+
 
 #projects {
   position: relative;
