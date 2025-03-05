@@ -119,11 +119,58 @@ body {
     overflow: hidden;
 }
 
-#skills .progress-bar {
-    background-color: #007bff;
-    line-height: 25px;
-    font-size: 1rem;
-    color: white;
+
+
+
+/* Cambiar el color de las barras de progreso para cada tecnología */
+#skills  .progress-bar-html {
+  background-color: #e34c26; /* Color para HTML */
+  line-height: 25px;
+  font-size: 1rem;
+  color: white;
+}
+
+#skills  .progress-bar-css {
+  background-color: #264de4; /* Color para CSS */
+  line-height: 25px;
+  font-size: 1rem;
+  color: white;
+}
+
+#skills  .progress-bar-js {
+  background-color: #f0db4f; /* Color para JavaScript */
+  color: black; /* Color del texto para JavaScript */
+  line-height: 25px;
+  font-size: 1rem;
+  color: white;
+}
+
+#skills  .progress-bar-java {
+  background-color: #007396; /* Color para Java */
+  line-height: 25px;
+  font-size: 1rem;
+  color: white;
+}
+
+#skills .progress-bar-bootstrap {
+  background-color: #563d7c; /* Color para Bootstrap */
+  line-height: 25px;
+  font-size: 1rem;
+  color: white;
+}
+
+#skills  .progress-bar-php {
+  background-color: #777bb4; /* Color para PHP */
+  line-height: 25px;
+  font-size: 1rem;
+  color: white;
+}
+
+#skills  .progress-bar-db {
+  background-color: #4db33d; /* Color para Base de datos */
+  line-height: 25px;
+  font-size: 1rem;
+  color: white;
 }
 
 #projects {
@@ -345,6 +392,48 @@ body {
 #contact{
   background-color: #db9292b6;
 }
+#contact .titulo{
+  
+  color: #960606;
+}
+
+#contact i{
+  font-size: 1rem;
+  color: #960606;
+}
+
+#contact .btn-contacto{
+  background-color: #960606;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#backToTopBtn {
+  background-color: #470202; 
+  color: white; 
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#backToTopBtn:hover {
+  background-color: #300202; 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
 .footer{
   background-color: rgba(255, 255, 255, 0.226);
 }
