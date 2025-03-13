@@ -1,3 +1,4 @@
+// Propósito: Código JavaScript para la página de inicio
 document.addEventListener("DOMContentLoaded", function() {
     let mybutton = document.getElementById("backToTopBtn");
 
@@ -24,12 +25,35 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
- document.addEventListener('DOMContentLoaded', function() {
-     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            navLinks.forEach(nav => nav.classList.remove('active'));
-            this.classList.add('active');
+
+// Proposito: Código JavaScript para el desplazamiento de los  navegadores
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
             });
         });
-});
+
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    });
