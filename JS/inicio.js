@@ -1,4 +1,5 @@
-// Propósito: Código JavaScript para la página de inicio
+
+// Propósito: Código JavaScript para el boton 
 document.addEventListener("DOMContentLoaded", function() {
     let mybutton = document.getElementById("backToTopBtn");
 
