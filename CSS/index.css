@@ -45,6 +45,7 @@ body {
   margin: var(--header-height) 0 0 0;
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -62,9 +63,10 @@ body {
 
 
 .navbar-custom {
-  background-color: rgba(255, 255, 255, 0.226);
   transition: background-color 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .navbar-nav .nav-link.active {
@@ -192,11 +194,13 @@ body {
   color: #ffffff;
   border-radius: 10px;
   overflow: hidden;
+  transition: all 0.3s ease-in-out; 
 }
-
+ 
 #projects .card-fondo1 {
   background: url('../imagenes/fondo-card1.JPG') no-repeat center center/cover;
 }
+
 
 #projects .card-fondo2 {
   background: url('../imagenes/fondo-card2.JPG') no-repeat center center/cover;
