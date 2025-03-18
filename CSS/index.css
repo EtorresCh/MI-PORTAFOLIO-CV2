@@ -39,7 +39,6 @@ html { scroll-behavior: smooth; }
 html {
   margin: 0;
   padding: 0;
-  background-color: #000;
 }
 body {
   margin: var(--header-height) 0 0 0;
@@ -457,9 +456,10 @@ body {
   background-color: #300202; 
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
 }
-.footer {
-  display: flex;
-  align-items: flex-start;
+footer {
+  background-color: rgba(17, 16, 16, 0.6); 
+  backdrop-filter: blur(8px); 
+  color: white;
 }
 
 .footer a {
@@ -474,7 +474,7 @@ body {
   -webkit-box-reflect: below 5px linear-gradient(transparent, #ffffff);
 }
 .social-login-icons svg {
-  width: 40px;
+  width: 30px;
 }
 
 .social-icon-1,
@@ -485,17 +485,17 @@ body {
 .social-icon-3-3,
 .social-icon-4,
 .social-icon-4-4 {
-  width: 50px;
+  width: 70px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
+  border-radius: 50%;
   margin: 20px 0 0px 0;
 }
 
 .icon svg {
-  fill: #111;
+  fill: #ffffff;
 }
 
 .socialcontainer {
