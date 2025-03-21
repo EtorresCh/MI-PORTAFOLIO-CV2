@@ -64,7 +64,7 @@ body {
 .navbar-custom {
   transition: background-color 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.2);
+  background: rgb(255, 255, 255);
   backdrop-filter: blur(10px);
 }
 
@@ -390,8 +390,8 @@ body {
 }
 
 #contact {
-  background: url('../imagenes/macbook-minimal-dark-wallpaper.jpg') no-repeat center center/cover;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('../imagenes/wallpaperflare.com_wallpaper.jpg') no-repeat center center/cover;
+  font-family: 'Poppins', sans-serif;
   position: relative;
   background-position: center 50%;
 }
@@ -406,9 +406,10 @@ body {
   color: #ffffff;
 }
 
-#contact i{
+#contact .icon-form{
   font-size: 1rem;
   color: #ffffff;
+
 }
 #contact .icon{
   font-size: 1rem;
@@ -425,6 +426,98 @@ body {
   align-items: center;
   justify-content: center;
 }
+.caja-formulario{
+  backdrop-filter: blur(5px);
+  min-height: calc(100vh - 70px);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.25);
+  padding:30px;
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  align-items: center;
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    width: 100%;
+    color: #ffffff;
+}
+
+.glassmorphism::placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.glassmorphism:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+textarea.glassmorphism {
+    resize: none;
+    height: 100px;
+}
+
+.button2 {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background:rgba(56, 53, 53, 0.267);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.911);
+  border: none;
+  cursor: pointer;
+}
+
+.button2:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button2::before {
+  border: 2px solid rgba(255, 255, 255, 0.40);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgb(207, 61, 16) 10.8%,
+    rgb(131, 16, 16) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+.input-container input.glassmorphism,
+.input-container textarea.glassmorphism {
+    padding-left: 30px; 
+}
+#contact .icon-form2{
+  font-size: 1rem;
+  color: #252424;
+
+}
+
 
 #contact .btn-contacto{
   background-color: #960606;

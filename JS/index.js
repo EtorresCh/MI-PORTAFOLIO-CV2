@@ -50,3 +50,9 @@ sr.reveal('.adaptable3',{
       distance: '300px',
       viewFactor: 0.01,
    });
+sr.reveal('.caja-formulario',{
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.01,
+   });
