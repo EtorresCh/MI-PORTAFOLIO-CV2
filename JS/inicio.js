@@ -58,3 +58,28 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     });
+
+
+// Proposito: Código JavaScript para el cambio del navegador
+    
+document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('.navbar-custom');
+    const aboutSection = document.querySelector('#about');
+    const navbarLogo = document.getElementById('navbar-logo');
+    const logoWhite  = 'imagenes/logoparafondonegro-removebg-preview.png';
+    const logoTransparent= 'imagenes/logo-portafolio2-removebg-preview.png'; 
+
+    function updateNavbar() {
+        const aboutSectionRect = aboutSection.getBoundingClientRect();
+        if (aboutSectionRect.top <= 0 && aboutSectionRect.bottom >= 0) {
+            navbar.classList.add('transparent');
+            navbarLogo.src = logoWhite;
+        } else {
+            navbar.classList.remove('transparent');
+            navbarLogo.src = logoTransparent;
+        }
+    }
+
+    window.addEventListener('scroll', updateNavbar);
+    updateNavbar();
+});
