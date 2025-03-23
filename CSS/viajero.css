@@ -1,19 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*, ::before, ::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
 
 
-html {
-  margin: 0;
-  padding: 0;
-}
-body {
-  overflow-x: hidden;
-  font-family:cursive;
-  font-family: 'Raleway', sans-serif;
-  background-color: #f3f2f1;
-}
 
 ::-webkit-scrollbar {
   width: 6px; 
@@ -40,27 +26,77 @@ body {
   color: rgb(190, 18, 18) !important; ;
 }
 
-.project-description {
-  background-color: #f3f2f1;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: 'Raleway', sans-serif;
+.inicio {
+  position: fixed; 
+  top: 90px;
+  left: 20px; 
+  padding: 10px;
+  background-color: #770707c7; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.76);
+  border-radius: 50%; 
+  text-align: center;
+  font-size: 24px;
+  z-index: 1000;
+  transition: background-color 0.3s, transform 0.3s;
 }
-.cuadrado {
-  background-color: #ffffff;
-  padding: 20px;
-  border: 2px solid #104361; /* Corregido: eliminé los paréntesis alrededor del color */
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.inicio:hover {
+  background-color: #ad0808; 
+  transform: scale(1.1);
+}
+
+.inicio i {
+  color: white;
 }
 
 .project-image {
   object-fit: cover;
-  border-radius: 10px;
   max-width: 100%;
 }
 
- 
+.project-description {
+  flex: 1 1 50rem;
+  padding: 2rem;
+  font-family: 'Raleway', sans-serif;
+  background: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+
+.about-section .section-title {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+
+.section-title{
+  flex:0 0 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+.section-title h1{
+  display: inline-block;
+  font-size: 40px;
+  color: #000000;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+}
+.section-title h1:before{
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left:0;
+  bottom:-5px;
+  width: 100px;
+  height: 3px;
+  background-color: #ff0000;
+}
+.about-section .subtitulo {
+  font-size: 16px;
+  color:#555555;
+  line-height: 26px;
+  margin: 0;
+}

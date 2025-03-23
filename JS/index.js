@@ -15,7 +15,7 @@ sr.reveal('.portada',{
 sr.reveal('.card',{
       duration: 2000,
       origin: 'top',
-      distance: '-300px',
+      distance: '-100px',
       viewFactor: 0.01,
    });
 sr.reveal('.barra1',{

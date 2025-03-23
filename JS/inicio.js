@@ -63,11 +63,40 @@ document.addEventListener("DOMContentLoaded", function() {
 // Proposito: Código JavaScript para el cambio del navegador
     
 document.addEventListener('DOMContentLoaded', function() {
+    const isMobile = window.innerWidth <= 768;
+    const navLinks = document.querySelectorAll('.nav-link');
     const navbar = document.querySelector('.navbar-custom');
     const aboutSection = document.querySelector('#about');
     const navbarLogo = document.getElementById('navbar-logo');
-    const logoWhite  = 'imagenes/logoparafondonegro-removebg-preview.png';
-    const logoTransparent= 'imagenes/logo-portafolio2-removebg-preview.png'; 
+    const logoWhite = 'imagenes/logoparafondonegro-removebg-preview.png';
+    const logoTransparent = 'imagenes/logo-portafolio2-removebg-preview.png';
+
+    if (!isMobile) {
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    }
 
     function updateNavbar() {
         const aboutSectionRect = aboutSection.getBoundingClientRect();
@@ -81,5 +110,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('scroll', updateNavbar);
-    updateNavbar();
+    updateNavbar(); // Llama a la función al cargar la página
 });

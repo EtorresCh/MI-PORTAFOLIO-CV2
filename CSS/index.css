@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap');
 :root {
   --header-height: 3rem;
   --font-semi: 600;
@@ -31,6 +31,26 @@
       --normal-font-size: 1rem;
   }
 }
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media (max-width: 390px) {
+  .animated {
+    animation: none !important;
+    transition: none !important;
+  }
+  .progress-bar-striped {
+    background-image: none !important;
+  }
+  .progress-bar-animated {
+    animation: none !important;
+  }
+  .slider .slide-track {
+    animation: none !important;
+  }
+}
 
 *, ::before, ::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -43,9 +63,10 @@ html {
 body {
   overflow-x: hidden;
   font-family:cursive;
-  font-family: 'Raleway', sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   line-height: 1.5;
+   background-color: rgb(255, 255, 255) !important;
 }
 
 ::-webkit-scrollbar {
@@ -65,8 +86,7 @@ body {
 .navbar-custom {
   transition: background-color 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background: rgb(255, 255, 255);
-  transition: all 0.5s ease;
+  background: white;
   padding: 4px 0px;
 }
 
@@ -92,6 +112,25 @@ body {
   position: relative;
   background-position: center 40%;
   height: 100vh;
+}
+
+@keyframes ani01 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#about .shape-01 {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ac0606;
+    right: 15%;
+    top: 20%;
+    animation: ani01 2s linear infinite;
 }
 
 
@@ -122,69 +161,28 @@ body {
   justify-content: space-evenly;
 }
 
-#skills {
-   position: relative;
-   background-color: white;
-}
-#skills .progress {
-  height: 25px;
-  background-color: #e9ecef;
-  border-radius: 5px;
-  overflow: hidden;
+#SobreMi {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
 }
 
-#skills .progress-bar {
-  line-height: 25px;
-  font-size: 1rem;
+h1 {
+  font-size: 3rem; 
+  color: #333; 
+  font-weight: 700; 
   text-align: center;
+  margin-bottom: 1rem; 
+  transition: transform 0.3s ease, color 0.3s ease; 
 }
 
-#skills .progress-bar-html { background-color: #e34c26; color: white; }
-#skills .progress-bar-css { background-color: #264de4; color: white; }
-#skills .progress-bar-js { background-color: #f0db4f; color: white; }
-#skills .progress-bar-java { background-color: #007396; color: white; }
-#skills .progress-bar-bootstrap { background-color: #563d7c; color: white; }
-#skills .progress-bar-php { background-color: #777bb4; color: white; }
-#skills .progress-bar-db { background-color: #4db33d; color: white; }
-
-.slider {
-  width: 75vw;
-  height: auto;
-  margin: auto;
-  overflow: hidden;
-}
-
-.slider .slide-track {
-  display: flex;
-  animation: scroll 30s linear infinite;
-  -webkit-animation: scroll 30s linear infinite;
-  width: calc(200px * 14);
-}
-
-.slider .slide {
-  width: 200px;
-}
-
-.slider .slide img {
-  width: 100%;
-  padding: 10px;
-}
-
-@keyframes scroll {
-  0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-  }
-  100% {
-      -webkit-transform: translateX(calc(-200px * 7));
-      transform: translateX(calc(-200px * 7));
-  }
+h1:hover {
+  color: #ad0808; 
+  transform: scale(1.05); 
 }
 
 #projects {
   position: relative;
- background-color: #f3f2f1;
- 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -402,14 +400,74 @@ body {
   width: 100%;
   resize: none;
 }
+
+#skills {
+  position: relative;
+}
+#skills .progress {
+ height: 25px;
+ background-color: #e9ecef;
+ border-radius: 5px;
+ overflow: hidden;
+}
+
+#skills .progress-bar {
+ line-height: 25px;
+ font-size: 1rem;
+ text-align: center;
+}
+
+#skills .progress-bar-html { background-color: #e34c26; color: white; }
+#skills .progress-bar-css { background-color: #264de4; color: white; }
+#skills .progress-bar-js { background-color: #f0db4f; color: white; }
+#skills .progress-bar-java { background-color: #007396; color: white; }
+#skills .progress-bar-bootstrap { background-color: #563d7c; color: white; }
+#skills .progress-bar-php { background-color: #777bb4; color: white; }
+#skills .progress-bar-db { background-color: #4db33d; color: white; }
+
+.slider {
+ width: 75vw;
+ height: auto;
+ margin: auto;
+ overflow: hidden;
+}
+
+.slider .slide-track {
+ display: flex;
+ animation: scroll 30s linear infinite;
+ -webkit-animation: scroll 30s linear infinite;
+ width: calc(200px * 14);
+}
+
+.slider .slide {
+ width: 200px;
+}
+
+.slider .slide img {
+ width: 100%;
+ padding: 10px;
+}
+
+@keyframes scroll {
+ 0% {
+     -webkit-transform: translateX(0);
+     transform: translateX(0);
+ }
+ 100% {
+     -webkit-transform: translateX(calc(-200px * 7));
+     transform: translateX(calc(-200px * 7));
+ }
+}
+
 #Mockup{
   position: relative;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #contact {
   background: url('../imagenes/wallpaperflare.com_wallpaper.jpg') no-repeat center center/cover;
-  font-family: 'Poppins', sans-serif;
   position: relative;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-position: center 50%;
 
 }
@@ -577,6 +635,7 @@ footer {
   background-color: rgba(17, 16, 16, 0.6); 
   backdrop-filter: blur(8px); 
   color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer a {
