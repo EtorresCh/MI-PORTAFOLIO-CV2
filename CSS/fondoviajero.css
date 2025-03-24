@@ -8,7 +8,7 @@ html, body {
 body {
   margin: 0;
   line-height: 1.5;
-  background: url('../imagenes/FONDO.JPG') no-repeat center center/cover;
+  background: url('../imagenes/5968949.jpg') no-repeat center center/cover;
   background-size: cover;
   background-attachment: fixed; 
   font-family: 'Raleway', sans-serif; 
@@ -44,14 +44,15 @@ body, input, textarea, button {
   background: transparent;
   box-shadow: none;
 }
-  .navbar-custom .nav-link {
-    color: #000;
-    transition: color 0.3s;
-  }
-  
-  .navbar-custom .nav-link.active {
-    color: red !important;
-  }
+.navbar-custom .nav-link {
+  color: #525050;
+  transition: color 0s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav .nav-link.active {
+  color: rgb(190, 18, 18) !important;
+}
 
 #Acerca{
   position: relative;
@@ -62,7 +63,7 @@ body, input, textarea, button {
   top: 90px;
   left: 20px; 
   padding: 10px;
-  background-color: #770707c7; 
+  background-color: #770707; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.76);
   border-radius: 50%; 
   text-align: center;
@@ -87,14 +88,14 @@ body, input, textarea, button {
 }
 
 .project-description {
-  flex: 1 1 50rem;
-  padding: 1rem;
-  margin: 0px;
+  text-align: justify;
   backdrop-filter: blur(5px);
   border-radius: 30px;
-  background: rgba(255, 255, 255, 0.25);
-  padding:30px;
-  border: 1px solid rgba(255, 255, 255, 0.40);
+  background: rgba(255, 255, 255, 0.2); 
+  border:  2px solid rgba(223, 223, 215, 0.5); 
+  font-family: 'Raleway', sans-serif; 
+  padding: 30px;
+  text-align: justify;
 }
 
 
@@ -215,14 +216,14 @@ body, input, textarea, button {
     transform-origin: -10vw;
   }
   .firefly::before {
-    background: rgb(250, 204, 0);
+    background: rgb(255, 166, 0);
     opacity: 0.4;
     animation: drift ease alternate infinite;
   }
   .firefly::after {
     background: white;
     opacity: 0;
-    box-shadow: 0 0 0vw 0vw yellow;
+    box-shadow: 0 0 0vw 0vw  rgb(189, 124, 4);
     animation: drift ease alternate infinite, flash ease infinite;
   }
   
