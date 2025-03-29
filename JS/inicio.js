@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const aboutSection = document.querySelector('#about');
     const navbarLogo = document.getElementById('navbar-logo');
     const logoWhite = 'imagenes/logoparafondonegro-removebg-preview.png';
-    const logoTransparent = 'imagenes/logo-portafolio2-removebg-preview.png';
+    const logoTransparent = 'imagenes/logoparafondonegro-removebg-preview.png';
 
     if (!isMobile) {
         navLinks.forEach(link => {

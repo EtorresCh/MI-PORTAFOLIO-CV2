@@ -58,14 +58,14 @@ sr.reveal('.caja-formulario',{
    });
    sr.reveal('.img-sobre',{
       duration: 2000,
-      origin: 'left',
+      origin: 'right',
       distance: '300px',
       viewFactor: 0.01,
    });
 
    sr.reveal('.info-sobre',{
       duration: 2000,
-      origin: 'right',
+      origin: 'left',
       distance: '300px',
       viewFactor: 0.01,
    });
