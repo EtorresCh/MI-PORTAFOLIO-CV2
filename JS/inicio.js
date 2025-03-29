@@ -24,91 +24,65 @@ document.addEventListener("DOMContentLoaded", function() {
         document.documentElement.scrollTop = 0;
     }
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar-custom");
 
+    // Al cargar la página, la navbar es transparente
+    navbar.classList.add("transparent");
 
-
-// Proposito: Código JavaScript para el desplazamiento de los  navegadores
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navLinks.forEach(nav => nav.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-
-
-        window.addEventListener('scroll', function() {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 60) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').includes(current)) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    });
-
-
-// Proposito: Código JavaScript para el cambio del navegador
-    
-document.addEventListener('DOMContentLoaded', function() {
-    const isMobile = window.innerWidth <= 768;
-    const navLinks = document.querySelectorAll('.nav-link');
-    const navbar = document.querySelector('.navbar-custom');
-    const aboutSection = document.querySelector('#about');
-    const navbarLogo = document.getElementById('navbar-logo');
-    const logoWhite = 'imagenes/logoparafondonegro-removebg-preview.png';
-    const logoTransparent = 'imagenes/logoparafondonegro-removebg-preview.png';
-
-    if (!isMobile) {
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navLinks.forEach(nav => nav.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-
-        window.addEventListener('scroll', function() {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 60) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').includes(current)) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    }
-
-    function updateNavbar() {
-        const aboutSectionRect = aboutSection.getBoundingClientRect();
-        if (aboutSectionRect.top <= 0 && aboutSectionRect.bottom >= 0) {
-            navbar.classList.add('transparent');
-            navbarLogo.src = logoWhite;
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) { 
+            navbar.classList.remove("transparent"); // Se vuelve opaca
         } else {
-            navbar.classList.remove('transparent');
-            navbarLogo.src = logoTransparent;
+            navbar.classList.add("transparent"); // Permanece transparente en la parte superior
+        }
+    });
+});
+
+
+//cambiar colores a texto
+function cambiarEstilos(color) {
+    // Cambia el color del texto
+    let elementos = document.querySelectorAll(".texto-cambiable");
+    elementos.forEach(el => el.style.color = color);
+
+    // Cambia el color del borde
+    let navbar = document.querySelector(".navbar-custom");
+    if (navbar) {
+        navbar.style.borderBottom = `0.2px solid ${color}`;
+    }
+    // cambiar el color del active
+    let navLinks = document.querySelectorAll(".navbar-nav .nav-link.active");
+    navLinks.forEach(link => {
+        link.style.removeProperty("color"); // Elimina cualquier color anterior
+        link.style.color = color; // Aplica el nuevo color
+    });
+    //cambia el color del border del footer
+    let footer = document.querySelector(".footer");
+    if (footer) {
+        footer.style.borderTop = `0.2px solid ${color}`;
+    }
+    let button=document.querySelector(".button_lg");
+    if(button){
+        button.style.backgroundColor =color;
+    }
+    let logo = document.getElementById("cambio-logo"); 
+    if (logo) {
+        switch (color) {
+            case "rgb(99, 6, 6)": // Rojo
+                logo.src = "imagenes/logoparafondonegro-removebg-preview.png";
+                break;
+            case "rgb(16, 228, 217)": // Azul
+                logo.src = "imagenes/log2-removebg-preview.png";
+                break;
+            case "rgb(7, 75, 7)": // Verde
+                logo.src = "imagenes/log4-removebg-preview.png";
+                break;
+            case "rgb(255, 60, 0)": // Naranja
+                logo.src = "imagenes/logo3-removebg-preview.png";
+                break;
+            default:
+                logo.src = "imagenes/logoparafondonegro-removebg-preview.png"; // Logo por defecto
         }
     }
-
-    window.addEventListener('scroll', updateNavbar);
-    updateNavbar(); // Llama a la función al cargar la página
-});
+}
