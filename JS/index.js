@@ -56,16 +56,3 @@ sr.reveal('.caja-formulario',{
       distance: '300px',
       viewFactor: 0.01,
    });
-   sr.reveal('.img-sobre',{
-      duration: 2000,
-      origin: 'right',
-      distance: '300px',
-      viewFactor: 0.01,
-   });
-
-   sr.reveal('.info-sobre',{
-      duration: 2000,
-      origin: 'left',
-      distance: '300px',
-      viewFactor: 0.01,
-   });

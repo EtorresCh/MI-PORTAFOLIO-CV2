@@ -19,10 +19,14 @@
                 <a class="navbar-brand" href="index.html">
                     <img  id="cambio-logo"src="imagenes/logoparafondonegro-removebg-preview.png" alt="Logo" width="120" class="img-fluid cambio-logo" id="navbar-logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto" >
                         <li class="nav-item">
@@ -37,40 +41,40 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#skills">Habilidades</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <button class="nav-link dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item ">
+                            <button class="nav-link  dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                                 Color
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu ">
                                 <li>
                                     <button class="dropdown-item" onclick="cambiarEstilos('rgb(99, 6, 6)')">
                                         <span class="color-box" style="background-color: rgb(99, 6, 6); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
-                                        Rojo
+                
                                     </button>
                                 </li>
                                 <li>
                                     <button class="dropdown-item" onclick="cambiarEstilos('rgb(16, 228, 217)')">
                                         <span class="color-box" style="background-color: rgb(16, 228, 217); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
-                                        Azul
+                                        
                                     </button>
                                 </li>
                                 <li>
                                     <button class="dropdown-item" onclick="cambiarEstilos('rgb(7, 75, 7)')">
-                                        <span class="color-box" style="background-color: rgb(7, 75, 7); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
-                                        Verde
+                                        <span class="color-box" style="background-color: rgb(54, 131, 4); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
+                                        
                                     </button>
                                 </li>
                                 <li>
-                                    <button class="dropdown-item" onclick="cambiarEstilos('rgb(255, 60, 0)')">
-                                        <span class="color-box" style="background-color: rgb(255, 60, 0); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
-                                        Naranja
+                                    <button class="dropdown-item" onclick="cambiarEstilos('rgb(240, 69, 17)')">
+                                        <span class="color-box" style="background-color: rgb(240, 69, 17); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
+                                        
                                     </button>
                                 </li>
                             </ul>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="btn btn-outline-light text-light" href="#contact">Contáctame</a>
+                            <a class="nav-link" href="#contact">Contactame</a>
                         </li>  
                     </ul>
                 </div>
@@ -114,18 +118,18 @@
                 </p>
                 <hr class="my-4 text-light">
                 
-                <p class="text-light fondo-text">
+                <p class="text-light fondo-text2">
                     <i class="fas fa-code fa-lg text-danger"></i> 
 
                     Programador web junior, enfocado en Desarrollo frontend y buenas prácticas, siempre aprendiendo y mejorando mis habilidades.
                 </p>
     
-                <p class="text-light fondo-text">
+                <p class="text-light fondo-text2">
                     <i class="fas fa-lightbulb fa-lg text-warning"></i> 
                     Exploro nuevas tecnologías para ofrecer soluciones innovadoras y eficientes en cada proyecto.
                 </p>
     
-                <p class="text-light fondo-text">
+                <p class="text-light fondo-text2">
                     <i class="fas fa-laptop-code fa-lg text-info"></i>  
                     Comprometido con la mejora continua, aplicando las mejores prácticas para desarrollar código limpio y eficiente.
                 </p>
@@ -400,7 +404,7 @@
                             </div>
                             <button class="button2">
                                 <span class="button-content">Enviar</span>
-                              </button>                              
+                            </button>                              
                         </form>
                 </div>
            </div>
