@@ -41,16 +41,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#skills">Habilidades</a>
                         </li>
-                        <li class="nav-item ">
-                            <button class="nav-link  dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
                                 Color
                             </button>
-                            <ul class="dropdown-menu ">
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <li>
                                     <button class="dropdown-item" onclick="cambiarEstilos('rgb(99, 6, 6)')">
                                         <span class="color-box" style="background-color: rgb(99, 6, 6); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
-                
                                     </button>
+                                </li>
                                 </li>
                                 <li>
                                     <button class="dropdown-item" onclick="cambiarEstilos('rgb(16, 228, 217)')">
