@@ -8,7 +8,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\xampp\\htdocs\\Portafolio 2.0\\index.html"
+            "file": "c:\\xampp\\htdocs\\MI-PORTAFOLIO-CV2\\index.html"
         }
     ]
 }
