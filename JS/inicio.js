@@ -113,8 +113,6 @@ function cambiarEstilos(color) {
             case "rgb(255, 60, 0)": 
                 logo.src = "imagenes/logo3-removebg-preview.png";
                 break;
-            case"rgb(86, 11, 109)":
-                logo.src="imagenes/logo3-removebg-preview.png"; 
             default:
                 logo.src = "imagenes/logoparafondonegro-removebg-preview.png"; // Logo por defecto
         }
