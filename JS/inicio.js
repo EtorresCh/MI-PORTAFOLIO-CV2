@@ -161,4 +161,29 @@ function cambiarEstilos(color) {
             transition: background-color 0.3s ease, color 0.3s ease;
         }
     `;
+    // cambia el color de  la cajas de iconos de slider
+    document.querySelectorAll(".caja-icon").forEach(icon => {
+        icon.addEventListener("mouseenter", () => {
+            icon.style.boxShadow = `0px 0px 15px 5px ${color}`; // Cambia el box-shadow
+            icon.style.transform = "scale(1.3)"; // Aumenta el tamaño
+        });
+
+        icon.addEventListener("mouseleave", () => {
+            icon.style.boxShadow = ""; // Restaura el box-shadow
+            icon.style.transform = ""; // Restaura el tamaño original
+        });
+    });
+
+    document.querySelectorAll(".caja-icon2").forEach(icon => {
+        icon.addEventListener("mouseenter", () => {
+            icon.style.boxShadow = `0px 0px 15px 5px ${color}`; 
+            icon.style.transform = "scale(1.3)"; 
+        });
+
+        icon.addEventListener("mouseleave", () => {
+            icon.style.boxShadow = ""; 
+            icon.style.transform = ""; 
+        });
+    });
 }
+
