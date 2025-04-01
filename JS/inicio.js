@@ -81,12 +81,7 @@ function cambiarEstilos(color) {
     if (navbar) {
         navbar.style.borderBottom = `0.2px solid ${color}`;
     }
-    // cambiar el color del active
-    let navLinks = document.querySelectorAll(".navbar-nav .nav-link.active");
-    navLinks.forEach(link => {
-        link.style.removeProperty("color"); // Elimina cualquier color anterior
-        link.style.color = color; // Aplica el nuevo color
-    });
+
 
     //cambia el color del border del footer
     let footer = document.querySelector(".footer");
@@ -143,47 +138,8 @@ function cambiarEstilos(color) {
     if (button2) {
         button2.style.backgroundColor = color;
     }
-    // cambia el hover de los navlink
-    let navStyleTag = document.getElementById("dynamic-navlink-style");
-    if (!navStyleTag) {
-        navStyleTag = document.createElement("style");
-        navStyleTag.id = "dynamic-navlink-style";
-        document.head.appendChild(navStyleTag);
-    }
-    navStyleTag.innerHTML = `
-        .navbar-custom .nav-link:hover {
-            color: ${color} !important;
-        }
-        .nav-item a.btn.btn-outline-light:hover {
-            background-color: transparent;
-            color: ${color} !important;
-            border-color: ${color} !important;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-    `;
-    // cambia el color de  la cajas de iconos de slider
-    document.querySelectorAll(".caja-icon").forEach(icon => {
-        icon.addEventListener("mouseenter", () => {
-            icon.style.boxShadow = `0px 0px 15px 5px ${color}`; // Cambia el box-shadow
-            icon.style.transform = "scale(1.3)"; // Aumenta el tamaño
-        });
+     // 🔥 Cambia el color del subrayado (.subrayado1::after)
+     document.documentElement.style.setProperty("--color-subrayado", color);
 
-        icon.addEventListener("mouseleave", () => {
-            icon.style.boxShadow = ""; // Restaura el box-shadow
-            icon.style.transform = ""; // Restaura el tamaño original
-        });
-    });
-
-    document.querySelectorAll(".caja-icon2").forEach(icon => {
-        icon.addEventListener("mouseenter", () => {
-            icon.style.boxShadow = `0px 0px 15px 5px ${color}`; 
-            icon.style.transform = "scale(1.3)"; 
-        });
-
-        icon.addEventListener("mouseleave", () => {
-            icon.style.boxShadow = ""; 
-            icon.style.transform = ""; 
-        });
-    });
 }
 
