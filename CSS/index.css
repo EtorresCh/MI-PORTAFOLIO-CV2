@@ -567,6 +567,7 @@ body {
 #skills .progress-bar-bootstrap { background-color: #563d7c; color: white; }
 #skills .progress-bar-php { background-color: #777bb4; color: white; }
 #skills .progress-bar-db { background-color: #4db33d; color: white; }
+#skills .progress-bar-git { background-color: #000000; color: white; }
 
 
 .caja-principal{
@@ -648,8 +649,8 @@ body {
   text-shadow: 0px 0px 6px #563d7c, 0px 0px 12px #563d7c;}
 .slider .fa-database {color: rgb(81, 219, 81);
   text-shadow: 0px 0px 6px green, 0px 0px 12px green;}
-.slider .fa-git-alt {color: #f14646;
-  text-shadow: 0px 0px 6px #e96363, 0px 0px 12px #e96363;}
+.slider .fa-git-alt {color: #000000;
+  text-shadow: 0px 0px 6px #fdfdfd, 0px 0px 12px #ffffff;}
 
 
 .caja-principal2 {
@@ -730,8 +731,8 @@ body {
   text-shadow: 0px 0px 6px #563d7c, 0px 0px 12px #563d7c;}
 .slider2 .fa-database {color: rgb(81, 219, 81);
   text-shadow: 0px 0px 6px green, 0px 0px 12px green;}
-.slider2 .fa-git-alt {color: #f14646;
-  text-shadow: 0px 0px 6px #e96363, 0px 0px 12px #e96363;}
+.slider2 .fa-git-alt {color: #000000;
+  text-shadow: 0px 0px 6px #fdfdfd, 0px 0px 12px #ffffff;}
 
 #Mockup{
   position: relative;
@@ -743,7 +744,8 @@ body {
 #Mockup img:hover {
   transform: scale(1.1); 
 
-}#contact {
+}
+#contact {
   position: relative;
 }
 
