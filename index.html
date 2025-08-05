@@ -1,568 +1,569 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#191b1b">
-    <title>Portafolio-Edgar Torres</title>
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="icon" href="imagenes/icono-pagina.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="JS/scrollreveal.js"></script>
-</head>
-<body>
-     <nav class="navbar navbar-custom navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img  id="cambio-logo"src="imagenes/logoparafondonegro-removebg-preview.png" alt="Logo" width="120" class="img-fluid cambio-logo" id="navbar-logo">
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio-Edgar Torres</title>
+        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="icon" href="imagenes/icono-pagina.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="JS/scrollreveal.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-custom navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img  id="cambio-logo"src="imagenes/logoparafondonegro-removebg-preview.png" alt="Logo" width="120" class="img-fluid cambio-logo" id="navbar-logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" >
+                        <li class="nav-item">
+                            <a class="nav-link subrayado1"  href="#about">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link subrayado1  " href="#SobreMi">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link subrayado1" href="#projects">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link subrayado1" href="#skills">Habilidades</a>
+                        </li>
+                        <li class="nav-item subrayado1 dropdown">
+                            <button class="nav-link  subrayadodropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"  aria-expanded="false">
+                                Color 
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <button class="dropdown-item" onclick="cambiarEstilos('rgb(99, 6, 6)')">
+                                        <span class="color-box" style="background-color: rgb(99, 6, 6); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
+                                    </button>
+                                </li>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" onclick="cambiarEstilos('rgb(16, 228, 217)')">
+                                        <span class="color-box" style="background-color: rgb(16, 228, 217); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
+                                        
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" onclick="cambiarEstilos('rgb(7, 75, 7)')">
+                                        <span class="color-box" style="background-color: rgb(54, 131, 4); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
+                                        
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" onclick="cambiarEstilos('rgb(255, 60, 0)')">
+                                        <span class="color-box" style="background-color: rgb(255, 60, 0); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
+                                        
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item ">
+                            <a class="nav-link subrayado1" href="#contact">Contactame</a>
+                        </li>  
+                    </ul>
                 </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto" >
-                    <li class="nav-item">
-                        <a class="nav-link subrayado1"  href="#about">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link subrayado1  " href="#SobreMi">Sobre mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link subrayado1" href="#projects">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link subrayado1" href="#skills">Habilidades</a>
-                    </li>
-                    <li class="nav-item subrayado1 dropdown">
-                        <button class="nav-link  subrayadodropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"  aria-expanded="false">
-                            Color 
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li>
-                                <button class="dropdown-item" onclick="cambiarEstilos('rgb(99, 6, 6)')">
-                                    <span class="color-box" style="background-color: rgb(99, 6, 6); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
-                                </button>
-                            </li>
-                            </li>
-                            <li>
-                                <button class="dropdown-item" onclick="cambiarEstilos('rgb(16, 228, 217)')">
-                                    <span class="color-box" style="background-color: rgb(16, 228, 217); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
-                                    
-                                </button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item" onclick="cambiarEstilos('rgb(7, 75, 7)')">
-                                    <span class="color-box" style="background-color: rgb(54, 131, 4); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
-                                    
-                                </button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item" onclick="cambiarEstilos('rgb(255, 60, 0)')">
-                                    <span class="color-box" style="background-color: rgb(255, 60, 0); width: 20px; height: 20px; display: inline-block; border-radius: 4px; margin-right: 8px;"></span>
-                                    
-                                </button>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    <li class="nav-item ">
-                        <a class="nav-link subrayado1" href="#contact">Contactame</a>
-                    </li>  
-                </ul>
             </div>
-        </div>
-     </nav>
-    <section id="about" class="py-5 ">
-        <video autoplay muted loop playsinline class="video-fondo">
-            <source src="video/4496268-hd_1920_1080_25fps.mp4" type="video/mp4">
-        </video>
-        <div class="container ">
-            <div class="row ">
-            <div class="col-lg-6 col-md-8 text-lg-start portada">
-                    <span class="text-light d-flex justify-content-center bg-gradient" >Ingeniería de Sistemas</span>
-                    <h2 class="display-4" style="color: rgb(255, 255, 255);">Soluciones Innovadoras 
-                        <span  class="texto-cambiable" style="color: rgb(119, 5, 5);">para el Mundo Digital</span>
-                    </h2>
-                    <p class="small-text ">Desarrollador web especializado en crear experiencias digitales con un enfoque en rendimiento,
-                         escalabilidad y diseño centrado en el usuario
+        </nav>
+        <section id="about" class="py-5 ">
+            <video autoplay muted loop playsinline class="video-fondo">
+                <source src="video/4496268-hd_1920_1080_25fps.mp4" type="video/mp4">
+            </video>
+            <div class="container ">
+                <div class="row ">
+                <div class="col-lg-6 col-md-8 text-lg-start portada">
+                        <span class="text-light d-flex justify-content-center bg-gradient" >Ingeniería de Sistemas</span>
+                        <h2 class="display-4" style="color: rgb(255, 255, 255);">Soluciones Innovadoras 
+                            <span  class="texto-cambiable" style="color: rgb(119, 5, 5);">para el Mundo Digital</span>
+                        </h2>
+                        <p class="small-text ">Desarrollador web especializado en crear experiencias digitales con un enfoque en rendimiento,
+                            escalabilidad y diseño centrado en el usuario
+                        </p>
+                        <div class="d-flex flex-column flex-lg-row align-items-center">
+                            <button class="button me-lg-3 mb-3 mb-lg-0">
+                                <span class="button_lg">
+                                    <span class="button_sl"></span>
+                                    <a href="archivos/CV EDGAR TORRES-2025.pdf" class="button_text" download="CV_EDGAR_TORRES.pdf">Descargar CV</a>
+                                </span>
+                            </button>
+                            <a class="btn btn-outline-light" href="#contact">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape-01"></div>
+            <br>
+        </section>
+        <section id="SobreMi">
+            <div class="content">
+                <div class="text-container">
+                    <br>
+                    <h2 class="display-3 text-white">Sobre <span class="texto-cambiable" style="color: rgb(119, 5, 5);">Mí</span></h2>
+                    <p class="lead text-light">
+                        Hola, soy Edgar Torres, apasionado por el desarrollo web y la creación de experiencias digitales modernas e interactivas.
                     </p>
-                    <div class="d-flex flex-column flex-lg-row align-items-center">
-                        <button class="button me-lg-3 mb-3 mb-lg-0">
-                            <span class="button_lg">
-                                <span class="button_sl"></span>
-                                <a href="archivos/CV EDGAR TORRES-2025.pdf" class="button_text" download="CV_EDGAR_TORRES.pdf">Descargar CV</a>
-                            </span>
-                        </button>
-                        <a class="btn btn-outline-light" href="#contact">Contactar</a>
-                    </div>
+                    <hr class="my-4 text-light">
+                    
+                    <p class="text-light fondo-text2">
+                        <i class="fas fa-code fa-lg text-danger"></i>
+                        Programador web junior enfocado en el desarrollo de soluciones modernas, siguiendo buenas prácticas y en constante aprendizaje para mejorar mis habilidades.
+                    </p>
+        
+                    <p class="text-light fondo-text2">
+                        <i class="fas fa-lightbulb fa-lg text-warning"></i> 
+                        Exploro nuevas tecnologías para ofrecer soluciones innovadoras y eficientes en cada proyecto.
+                    </p>
+        
+                    <p class="text-light fondo-text2">
+                        <i class="fas fa-laptop-code fa-lg text-info"></i>  
+                        Comprometido con la mejora continua, aplicando las mejores prácticas para desarrollar código limpio y eficiente.
+                    </p>
                 </div>
-             </div>
-        </div>
-        <div class="shape-01"></div>
-        <br>
-    </section>
-
-    <section id="SobreMi">
-        <div class="content">
-            <div class="text-container">
-                <br>
-                <h2 class="display-3 text-white">Sobre <span class="texto-cambiable" style="color: rgb(119, 5, 5);">Mí</span></h2>
-                <p class="lead text-light">
-                    Hola, soy Edgar Torres, apasionado por el desarrollo web y la creación de experiencias digitales modernas e interactivas.
-                </p>
-                <hr class="my-4 text-light">
                 
-                <p class="text-light fondo-text2">
-                    <i class="fas fa-code fa-lg text-danger"></i>
-                    Programador web junior enfocado en el desarrollo de soluciones modernas, siguiendo buenas prácticas y en constante aprendizaje para mejorar mis habilidades.
-                </p>
-    
-                <p class="text-light fondo-text2">
-                    <i class="fas fa-lightbulb fa-lg text-warning"></i> 
-                    Exploro nuevas tecnologías para ofrecer soluciones innovadoras y eficientes en cada proyecto.
-                </p>
-    
-                <p class="text-light fondo-text2">
-                    <i class="fas fa-laptop-code fa-lg text-info"></i>  
-                    Comprometido con la mejora continua, aplicando las mejores prácticas para desarrollar código limpio y eficiente.
-                </p>
-            </div>
-            
-            <div class="image-container">
-                <img src="imagenes/fondo-sobre.jpg" alt="Imagen de ejemplo">
-            </div>
-        </div>
-    </section>
-
-
-    <section id="projects" class="py-5">
-        <br>
-        <div class="container">
-            <div class="row ">
-                <div class="col-12 text-center">
-                    <h2 class="display-3 " style="color: #ffffff " >Mi <span  class="texto-cambiable" style="color: rgb(119, 5, 5);">  Portafolio <span style="color: rgb(255, 255, 255);">  de proyectos </span></span> </h2>
-                    <p class="lead">Aquí hay algunos de los mas recientes en el desarrollo de Software  y soluciones tecnologicas.</p>
-                    <hr class="my-4 text-light">                    
+                <div class="image-container">
+                    <img src="imagenes/fondo-sobre.jpg" alt="Imagen de ejemplo">
                 </div>
             </div>
-            <div class="row ">
-                <div class="col-lg-4 col-md-6 mb-4 card-agranda">
-                    <div class="card h-130 card-custom card-fondo1">
-                        <div class="card-body">
-                            <h5 class="card-title">Viajeros Perú</h5>
-                            <p class="card-text">Empresa peruana dedicada a la venta de paquetes turísticos.</p>
-                            <a href="html/ViajerosPeru.html" class="btn btn-primary btn-transparent">
-                                Más información
-                            </a>
-                        </div>
+        </section>
+        <section id="projects" class="py-5">
+            <br>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 text-center">
+                        <h2 class="display-3 " style="color: #ffffff " >Mi <span  class="texto-cambiable" style="color: rgb(119, 5, 5);">  Portafolio <span style="color: rgb(255, 255, 255);">  de proyectos </span></span> </h2>
+                        <p class="lead">Aquí hay algunos de los mas recientes en el desarrollo de Software  y soluciones tecnologicas.</p>
+                        <hr class="my-4 text-light">                    
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 card-agranda">
-                    <div class="card h-130 card-custom card-fondo2">
-                        <div class="card-body">
-                            <h5 class="card-title">Aruma</h5>
-                            <de class="card-text"> Empresa dedicada a la de venta de cosméticos</p>
-                                <a href="html/aruma.html" class="btn btn-primary btn-transparent">
+                <div class="row ">
+                    <div class="col-lg-4 col-md-6 mb-4 card-agranda">
+                        <div class="card h-130 card-custom card-fondo1">
+                            <div class="card-body">
+                                <h5 class="card-title">Viajeros Perú</h5>
+                                <p class="card-text">Empresa peruana dedicada a la venta de paquetes turísticos.</p>
+                                <a href="html/ViajerosPeru.html" class="btn btn-primary btn-transparent">
                                     Más información
                                 </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 card-agranda">
-                    <div class="card h-130 card-custom card-fondo3">
-                        <div class="card-body">
-                            <h5 class="card-title">Conadis</h5>
-                            <p class="card-text">Software de registro para discapacitados en el programa de la
-                                Municipalidad de Chiclayo</p>
-                                <a href="html/conadis.html" class="btn btn-primary btn-transparent">
+                    <div class="col-lg-4 col-md-6 mb-4 card-agranda">
+                        <div class="card h-130 card-custom card-fondo2">
+                            <div class="card-body">
+                                <h5 class="card-title">Aruma</h5>
+                                <de class="card-text"> Empresa dedicada a la de venta de cosméticos</p>
+                                    <a href="html/aruma.html" class="btn btn-primary btn-transparent">
+                                        Más información
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 card-agranda">
+                        <div class="card h-130 card-custom card-fondo3">
+                            <div class="card-body">
+                                <h5 class="card-title">Conadis</h5>
+                                <p class="card-text">Software de registro para discapacitados en el programa de la
+                                    Municipalidad de Chiclayo</p>
+                                    <a href="html/conadis.html" class="btn btn-primary btn-transparent">
+                                        Más información
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 card-agranda">
+                        <div class="card h-130 card-custom card-fondo4">
+                            <div class="card-body">
+                                <h5 class="card-title">Amareto Makery </h5>
+                                <p class="card-text"> Empresa peruana dedicada la venta de postres </p>
+                                <a href="html/amareto.html" class="btn btn-primary btn-transparent">
                                     Más información
                                 </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 card-agranda">
-                    <div class="card h-130 card-custom card-fondo4">
-                        <div class="card-body">
-                            <h5 class="card-title">Amareto Makery </h5>
-                            <p class="card-text"> Empresa peruana dedicada la venta de postres </p>
-                            <a href="html/amareto.html" class="btn btn-primary btn-transparent">
-                                Más información
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 card-agranda">
-                    <div class="card h-130 card-custom card-fondo5">
-                        <div class="card-body">
-                            <h5 class="card-title">La fortaleza</h5>
-                            <p class="card-text">Empresa dedicada a la venta de productos ferreteros</p>
-                            <a href="html/fortaleza.html" class="btn btn-primary btn-transparent">
-                                Más información
-                            </a>
+                    <div class="col-lg-4 col-md-6 mb-4 card-agranda">
+                        <div class="card h-130 card-custom card-fondo5">
+                            <div class="card-body">
+                                <h5 class="card-title">La fortaleza</h5>
+                                <p class="card-text">Empresa dedicada a la venta de productos ferreteros</p>
+                                <a href="html/fortaleza.html" class="btn btn-primary btn-transparent">
+                                    Más información
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="skills" class="py-5 ">
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="display-3 " style="color: #ffffff ">Mis <span class="texto-cambiable" style="color: rgb(119, 5, 5);">Conocimientos </span><span style="color: rgb(255, 255, 255);"> y Competencias  </span></h2>
-                    <p class="lead">Aquí están algunas de las tecnologías y lenguajes de programación con los que he trabajado.</p>
-                    <hr class="my-4 text-light">   
-                </div>
-            </div> 
-            <div class="row skills">
-                <div class="col-lg-6 col-md-12 mb-4 barra1">
-                    <h5 class="text-light">HTML</h5>
-                    <div class="progress ">
-                        <div class="progress-bar-html " role="progressbar"
-                            style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 mb-4 barra2">
-                    <h5 class="text-light">CSS</h5>
-                    <div class="progress">
-                        <div class="progress-bar-css " role="progressbar"
-                            style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 mb-4 barra1">
-                    <h5 class="text-light">JavaScript</h5>
-                    <div class="progress">
-                        <div class="progress-bar-js " role="progressbar"
-                            style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 mb-4 barra2">
-                    <h5 class="text-light">Java</h5>
-                    <div class="progress">
-                        <div class="progress-bar-java " role="progressbar"
-                            style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 mb-4 barra1">
-                    <h5 class="text-light">Bootstrap</h5>
-                    <div class="progress">
-                        <div class="progress-bar-bootstrap " role="progressbar"
-                            style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 mb-4 barra2">
-                    <h5 class="text-light">PHP</h5>
-                    <div class="progress">
-                        <div class="progress-bar-php" role="progressbar"
-                            style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 mb-4 barra1">
-                    <h5 class="text-light">Base de datos</h5>
-                    <div class="progress">
-                        <div class="progress-bar-db" role="progressbar"
-                            style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 mb-4 barra1">
-                    <h5 class="text-light">Git</h5>
-                    <div class="progress">
-                        <div class="progress-bar-git" role="progressbar"
-                            style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                    </div>
-                </div>
-            </div>
-            <div class="caja-principal">
-                <div class="slider">
-                    <div class="slide-track">
-                        <div class="caja-icon"><i class="fab fa-html5"></i></div>
-                        <div class="caja-icon"><i class="fab fa-css3-alt"></i></div>
-                        <div class="caja-icon"><i class="fab fa-js"></i></div>
-                        <div class="caja-icon"><i class="fab fa-php"></i></div>
-                        <div class="caja-icon"><i class="fab fa-java"></i></div>
-                        <div class="caja-icon"><i class="fab fa-git-alt"></i></div>
-                        <div class="caja-icon"><i class="fab fa-bootstrap"></i></div>
-                        <div class="caja-icon"><i class="fas fa-database"></i></div>
-                        <div class="caja-icon"><i class="fab fa-html5"></i></div>
-                        <div class="caja-icon"><i class="fab fa-css3-alt"></i></div>
-                        <div class="caja-icon"><i class="fab fa-js"></i></div>
-                        <div class="caja-icon"><i class="fab fa-php"></i></div>
-                        <div class="caja-icon"><i class="fab fa-java"></i></div>
-                        <div class="caja-icon"><i class="fab fa-git-alt"></i></div>
-                        <div class="caja-icon"><i class="fab fa-bootstrap"></i></div>
-                        <div class="caja-icon"><i class="fas fa-database"></i></div>
-                        <div class="caja-icon"><i class="fab fa-html5"></i></div>
-                        <div class="caja-icon"><i class="fab fa-css3-alt"></i></div>
-                        <div class="caja-icon"><i class="fab fa-js"></i></div>
-                        <div class="caja-icon"><i class="fab fa-php"></i></div>
-                        <div class="caja-icon"><i class="fab fa-java"></i></div>
-                        <div class="caja-icon"><i class="fab fa-git-alt"></i></div>
-                        <div class="caja-icon"><i class="fab fa-bootstrap"></i></div>
-                        <div class="caja-icon"><i class="fas fa-database"></i></div>
+        </section>
+        <section id="skills" class="py-5 ">
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="display-3 " style="color: #ffffff ">Mis <span class="texto-cambiable" style="color: rgb(119, 5, 5);">Conocimientos </span><span style="color: rgb(255, 255, 255);"> y Competencias  </span></h2>
+                        <p class="lead">Aquí están algunas de las tecnologías y lenguajes de programación con los que he trabajado.</p>
+                        <hr class="my-4 text-light">   
                     </div>
                 </div> 
-            </div>    
-            <div class="caja-principal2">
-                <div class="slider2">
-                    <div class="slide-track2">
-                        <div class="caja-icon2"><i class="fab fa-git-alt"></i></div>  <!-- Cambio de posición -->
-                        <div class="caja-icon2"><i class="fab fa-java"></i></div>
-                        <div class="caja-icon2"><i class="fab fa-bootstrap"></i></div>
-                        <div class="caja-icon2"><i class="fab fa-css3-alt"></i></div> <!-- Cambio de posición -->
-                        <div class="caja-icon2"><i class="fab fa-js"></i></div>
-                        <div class="caja-icon2"><i class="fab fa-html5"></i></div>  <!-- Cambio de posición -->
-                        <div class="caja-icon2"><i class="fab fa-php"></i></div>
-                        <div class="caja-icon2"><i class="fas fa-database"></i></div>
-                        <div class="caja-icon2"><i class="fab fa-git-alt"></i></div>  <!-- Cambio de posición -->
-                        <div class="caja-icon2"><i class="fab fa-java"></i></div>
-                        <div class="caja-icon2"><i class="fab fa-bootstrap"></i></div>
-                        <div class="caja-icon2"><i class="fab fa-css3-alt"></i></div> <!-- Cambio de posición -->
-                        <div class="caja-icon2"><i class="fab fa-js"></i></div>
-                        <div class="caja-icon2"><i class="fab fa-html5"></i></div>  <!-- Cambio de posición -->
-                        <div class="caja-icon2"><i class="fab fa-php"></i></div>
-                        <div class="caja-icon2"><i class="fas fa-database"></i></div>
-                        <div class="caja-icon2"><i class="fab fa-git-alt"></i></div>  <!-- Cambio de posición -->
-                        <div class="caja-icon2"><i class="fab fa-java"></i></div>
-                        <div class="caja-icon2"><i class="fab fa-bootstrap"></i></div>
-                        <div class="caja-icon2"><i class="fab fa-css3-alt"></i></div> <!-- Cambio de posición -->
-                        <div class="caja-icon2"><i class="fab fa-js"></i></div>
-                        <div class="caja-icon2"><i class="fab fa-html5"></i></div>  <!-- Cambio de posición -->
-                        <div class="caja-icon2"><i class="fab fa-php"></i></div>
-                        <div class="caja-icon2"><i class="fas fa-database"></i></div>
+                <div class="row skills">
+                    <div class="col-lg-6 col-md-12 mb-4 barra1">
+                        <h5 class="text-light">HTML</h5>
+                        <div class="progress ">
+                            <div class="progress-bar-html " role="progressbar"
+                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 barra2">
+                        <h5 class="text-light">CSS</h5>
+                        <div class="progress">
+                            <div class="progress-bar-css " role="progressbar"
+                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 barra1">
+                        <h5 class="text-light">JavaScript</h5>
+                        <div class="progress">
+                            <div class="progress-bar-js " role="progressbar"
+                                style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 barra2">
+                        <h5 class="text-light">Java</h5>
+                        <div class="progress">
+                            <div class="progress-bar-java " role="progressbar"
+                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 barra1">
+                        <h5 class="text-light">Bootstrap</h5>
+                        <div class="progress">
+                            <div class="progress-bar-bootstrap " role="progressbar"
+                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 barra2">
+                        <h5 class="text-light">PHP</h5>
+                        <div class="progress">
+                            <div class="progress-bar-php" role="progressbar"
+                                style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 barra1">
+                        <h5 class="text-light">Base de datos</h5>
+                        <div class="progress">
+                            <div class="progress-bar-db" role="progressbar"
+                                style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 barra2">
+                        <h5 class="text-light">Git</h5>
+                        <div class="progress">
+                            <div class="progress-bar-git" role="progressbar"
+                                style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 barra1">
+                        <h5 class="text-light">Python</h5>
+                        <div class="progress">
+                            <div class="progress-bar-db" role="progressbar"
+                                style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caja-principal">
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="caja-icon"><i class="fab fa-html5"></i></div>
+                            <div class="caja-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="caja-icon"><i class="fab fa-js"></i></div>
+                            <div class="caja-icon"><i class="fab fa-php"></i></div>
+                            <div class="caja-icon"><i class="fab fa-java"></i></div>
+                            <div class="caja-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="caja-icon"><i class="fab fa-bootstrap"></i></div>
+                            <div class="caja-icon"><i class="fas fa-database"></i></div>
+                            <div class="caja-icon"><i class="fab fa-html5"></i></div>
+                            <div class="caja-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="caja-icon"><i class="fab fa-js"></i></div>
+                            <div class="caja-icon"><i class="fab fa-php"></i></div>
+                            <div class="caja-icon"><i class="fab fa-java"></i></div>
+                            <div class="caja-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="caja-icon"><i class="fab fa-bootstrap"></i></div>
+                            <div class="caja-icon"><i class="fas fa-database"></i></div>
+                            <div class="caja-icon"><i class="fab fa-html5"></i></div>
+                            <div class="caja-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="caja-icon"><i class="fab fa-js"></i></div>
+                            <div class="caja-icon"><i class="fab fa-php"></i></div>
+                            <div class="caja-icon"><i class="fab fa-java"></i></div>
+                            <div class="caja-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="caja-icon"><i class="fab fa-bootstrap"></i></div>
+                            <div class="caja-icon"><i class="fas fa-database"></i></div>
+                        </div>
+                    </div> 
+                </div>    
+                <div class="caja-principal2">
+                    <div class="slider2">
+                        <div class="slide-track2">
+                            <div class="caja-icon2"><i class="fab fa-git-alt"></i></div>  <!-- Cambio de posición -->
+                            <div class="caja-icon2"><i class="fab fa-java"></i></div>
+                            <div class="caja-icon2"><i class="fab fa-bootstrap"></i></div>
+                            <div class="caja-icon2"><i class="fab fa-css3-alt"></i></div> <!-- Cambio de posición -->
+                            <div class="caja-icon2"><i class="fab fa-js"></i></div>
+                            <div class="caja-icon2"><i class="fab fa-html5"></i></div>  <!-- Cambio de posición -->
+                            <div class="caja-icon2"><i class="fab fa-php"></i></div>
+                            <div class="caja-icon2"><i class="fas fa-database"></i></div>
+                            <div class="caja-icon2"><i class="fab fa-git-alt"></i></div>  <!-- Cambio de posición -->
+                            <div class="caja-icon2"><i class="fab fa-java"></i></div>
+                            <div class="caja-icon2"><i class="fab fa-bootstrap"></i></div>
+                            <div class="caja-icon2"><i class="fab fa-css3-alt"></i></div> <!-- Cambio de posición -->
+                            <div class="caja-icon2"><i class="fab fa-js"></i></div>
+                            <div class="caja-icon2"><i class="fab fa-html5"></i></div>  <!-- Cambio de posición -->
+                            <div class="caja-icon2"><i class="fab fa-php"></i></div>
+                            <div class="caja-icon2"><i class="fas fa-database"></i></div>
+                            <div class="caja-icon2"><i class="fab fa-git-alt"></i></div>  <!-- Cambio de posición -->
+                            <div class="caja-icon2"><i class="fab fa-java"></i></div>
+                            <div class="caja-icon2"><i class="fab fa-bootstrap"></i></div>
+                            <div class="caja-icon2"><i class="fab fa-css3-alt"></i></div> <!-- Cambio de posición -->
+                            <div class="caja-icon2"><i class="fab fa-js"></i></div>
+                            <div class="caja-icon2"><i class="fab fa-html5"></i></div>  <!-- Cambio de posición -->
+                            <div class="caja-icon2"><i class="fab fa-php"></i></div>
+                            <div class="caja-icon2"><i class="fas fa-database"></i></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section  id="Mockup" class="py-5 text-center ">
+            <div class="container">
+                <h2 class="display-3" style="color: #ffffff ">Páginas Web <span  class="texto-cambiable" style="color: rgb(119, 5, 5);">Responsivas </span></h2>
+                <p class="lead">Adaptables para todo tipo de dispositivos: teléfono, monitor, tablet.</p>
+                <hr class="my-4 text-light">   
+                <div class="row justify-content-center">
+                    <div class=" col-md-2 adaptable1 ">
+                        <img src="imagenes/3.png"  style="height: 400px;"  class="img-fluid" alt="Mockup iPhone">
+                    </div>
+                    <div class=" col-md-6 adaptable2">
+                        <img src="imagenes/1.png" style="height: 400px;" class="img-fluid" alt="Mockup Tablet">
+                    </div>
+                    <div class="col-md-4 adaptable3">
+                        <img src="imagenes/2.png" style="height: 400px;" class="img-fluid" alt="Mockup Monitor">
                     </div>
                 </div>
             </div>
-              
-        </div>
-    </section>
-    <section  id="Mockup" class="py-5 text-center ">
-        <div class="container">
-            <h2 class="display-3" style="color: #ffffff ">Páginas Web <span  class="texto-cambiable" style="color: rgb(119, 5, 5);">Responsivas </span></h2>
-            <p class="lead">Adaptables para todo tipo de dispositivos: teléfono, monitor, tablet.</p>
-            <hr class="my-4 text-light">   
-            <div class="row justify-content-center">
-                <div class=" col-md-2 adaptable1 ">
-                    <img src="imagenes/3.png"  style="height: 400px;"  class="img-fluid" alt="Mockup iPhone">
+        </section>
+        <section id="contact" class="py-5">
+            <br>
+            <video autoplay muted loop playsinline class="video-fondo">
+                <source src="video/7534237-hd_1920_1080_25fps.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="display-3 " style="color: #ffffff ">¿Interesado en  <span  class="texto-cambiable"style="color: rgb(119, 5, 5);">Trabajar Juntos </span> <span style="color: rgb(255, 255, 255);"> ?</span></h2>
+                        <p class="lead  ">Ponte en contacto conmigo para más información.</p>
+                        <hr class="my-4 text-light">   
+                    </div>
                 </div>
-                <div class=" col-md-6 adaptable2">
-                    <img src="imagenes/1.png" style="height: 400px;" class="img-fluid" alt="Mockup Tablet">
-                </div>
-                <div class="col-md-4 adaptable3">
-                    <img src="imagenes/2.png" style="height: 400px;" class="img-fluid" alt="Mockup Monitor">
-                </div>
+                <div class="row justify-content-center align-items-center caja-formulario">
+                    <div class="col-lg-4 mb-5">
+                            <div class="card-body">
+                            <div class="mb-4">
+                                    <label  class="titulo ">Email</label>
+                                    <p class="mb-1 text-light">
+                                        <i class="fas fa-envelope me-2 icon-circle icon-form"></i>edgar73522538@gmail.com
+                                    </p>
+                            </div>
+                            <div class="mb-4 ">
+                                    <label class="titulo">Telefono</label>
+                                    <p class="mb-1 text-light">
+                                        <i class="fas fa-phone me-2 icon-circle icon-form"></i>+51 981 902 522
+                                    </p>
+                            </div>
+                            <div class="mb-4 ">
+                                    <label class="titulo">Ubicacion</label>
+                                    <p class="mb-1 text-light">
+                                        <i class="fas fa-map-marker-alt me-2 icon-circle icon-form"></i>Chiclayo, Perú
+                                    </p>
+                            </div>
+                            <div class="mb-4">
+                                    <p class="mb-1 " style="color:white;">Sígueme en mis redes sociales</p>
+                                    <a href="https://twitter.com/" class=" me-3 text-light" title="Twitter"> </a>
+                                    <i class="fab fa-twitter rounded-circle p-3 border "></i>
+                                    
+                                    <a href="https://facebook.com/profile.php?id=100068788826153" class=" me-3 text-light" title="Facebook"></a>
+                                    <i class="fab fa-facebook rounded-circle p-3 border "></i>
+                                    
+                                    <a href="https://linkedin.com/edgar-junior-torres-chafloque-005899251/" class="text-light me-3" title="LinkedIn"></a>
+                                    <i class="fab fa-linkedin rounded-circle p-3 border "></i>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-7 mb-5">
+                            <form>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Nombre" class="glassmorphism">
+                                </div>
+                                <div class="input-container">
+                                    <input type="email" placeholder="Email" class="glassmorphism">
+                                </div>
+                                <div class="input-container">
+                                    <input type="text" placeholder="Asunto" class="glassmorphism">
+                                </div>
+                                <div class="input-container">
+                                    <textarea placeholder="Mensaje" class="glassmorphism"></textarea>
+                                </div>
+                                <button class="button2">
+                                    <span class="button-content">Enviar</span>
+                                </button>                              
+                            </form>
+                    </div>
             </div>
-        </div>
-    </section>
-    <section id="contact" class="py-5">
-        <br>
-        <video autoplay muted loop playsinline class="video-fondo">
-            <source src="video/7534237-hd_1920_1080_25fps.mp4" type="video/mp4">
-        </video>
-        <div class="container">
+        </section>
+        <button onclick="Function()" id="backToTopBtn" class="btn "><i class="fas fa-chevron-up"></i></button>
+        <footer class="py-4 footer">
+            <div class="container text-center">
             <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="display-3 " style="color: #ffffff ">¿Interesado en  <span  class="texto-cambiable"style="color: rgb(119, 5, 5);">Trabajar Juntos </span> <span style="color: rgb(255, 255, 255);"> ?</span></h2>
-                    <p class="lead  ">Ponte en contacto conmigo para más información.</p>
-                    <hr class="my-4 text-light">   
+                <div class=" col-md-4">
+                <h5 class="text-light">Sobre Mí</h5>
+                <p>Hola, soy Edgar Torres, un desarrollador web apasionado por crear soluciones innovadoras y eficientes. ¡Bienvenido a mi portafolio!</p>
+                <hr class="my-4 text-light">   
+                </div>
+                <div class="col-md-4">
+                <h5 class="text-light">Enlaces</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#about" class=" text-decoration-none subrayado">Inicio</a></li>
+                    <li><a href="#SobreMi" class=" text-decoration-none subrayado">Sobre Mi</a></li>
+                    <li><a href="#projects" class=" text-decoration-none subrayado">Proyectos</a></li>
+                    <li><a href="#skills" class="text-decoration-none subrayado">Habilidades</a></li>
+                    <li><a href="#contact" class=" text-decoration-none subrayado">Contáctame</a></li>
+                </ul>
+                </div>
+                <div class="col-md-4">
+                <h5 class="text-light">Conéctate conmigo</h5>
+                        <div class="social-login-icons">
+                            <div class="socialcontainer">
+                            <div class="icon social-icon-1-1">
+                                <svg
+                                viewBox="0 0 512 512"
+                                height="1.7em"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="svgIcontwit"
+                                fill="white"
+                                >
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                                ></path>
+                                </svg>
+                            </div>
+                            <div class="social-icon-1">
+                                <svg
+                                viewBox="0 0 512 512"
+                                height="1.7em"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="svgIcontwit"
+                                fill="white"
+                                >
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                                ></path>
+                                </svg>
+                            </div>
+                            </div>
+                            <div class="socialcontainer">
+                            <div class="icon social-icon-2-2">
+                                <svg
+                                fill="white"
+                                class="svgIcon"
+                                viewBox="0 0 448 512"
+                                height="1.5em"
+                                xmlns="http://www.w3.org/2000/svg"
+                                >
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                ></path>
+                                </svg>
+                            </div>
+                            <div class="social-icon-2">
+                                <svg
+                                fill="white"
+                                class="svgIcon"
+                                viewBox="0 0 448 512"
+                                height="1.5em"
+                                xmlns="http://www.w3.org/2000/svg"
+                                >
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                ></path>
+                                </svg>
+                            </div>
+                            </div>
+                            <div class="socialcontainer">
+                            <div class="icon social-icon-3-3">
+                                <svg
+                                viewBox="0 0 384 512"
+                                fill="white"
+                                height="1.6em"
+                                xmlns="http://www.w3.org/2000/svg"
+                                >
+                                <path
+                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                                ></path>
+                                </svg>
+                            </div>
+                            <div class="social-icon-3">
+                                <svg
+                                viewBox="0 0 384 512"
+                                fill="white"
+                                height="1.6em"
+                                xmlns="http://www.w3.org/2000/svg"
+                                >
+                                <path
+                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                                ></path>
+                                </svg>
+                            </div>
+                            </div>
+                            <div class="socialcontainer">
+                            <div class="icon social-icon-4-4">
+                                <svg fill="white" viewBox="0 0 496 512" height="1.6em">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                ></path>
+                                </svg>
+                            </div>
+                            <div class="social-icon-4">
+                                <svg fill="white" viewBox="0 0 496 512" height="1.6em">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                ></path>
+                                </svg>
+                            </div>
+                            </div>
+                        </div>       
                 </div>
             </div>
-            <div class="row justify-content-center align-items-center caja-formulario">
-                <div class="col-lg-4 mb-5">
-                        <div class="card-body">
-                        <div class="mb-4">
-                                <label  class="titulo ">Email</label>
-                                <p class="mb-1 text-light">
-                                    <i class="fas fa-envelope me-2 icon-circle icon-form"></i>edgar73522538@gmail.com
-                                </p>
-                        </div>
-                        <div class="mb-4 ">
-                                <label class="titulo">Telefono</label>
-                                <p class="mb-1 text-light">
-                                    <i class="fas fa-phone me-2 icon-circle icon-form"></i>+51 981 902 522
-                                </p>
-                        </div>
-                        <div class="mb-4 ">
-                                <label class="titulo">Ubicacion</label>
-                                <p class="mb-1 text-light">
-                                    <i class="fas fa-map-marker-alt me-2 icon-circle icon-form"></i>Chiclayo, Perú
-                                </p>
-                        </div>
-                        <div class="mb-4">
-                                <p class="mb-1 " style="color:white;">Sígueme en mis redes sociales</p>
-                                <a href="https://twitter.com/" class=" me-3 text-light" title="Twitter"> </a>
-                                <i class="fab fa-twitter rounded-circle p-3 border "></i>
-                                
-                                <a href="https://facebook.com/profile.php?id=100068788826153" class=" me-3 text-light" title="Facebook"></a>
-                                <i class="fab fa-facebook rounded-circle p-3 border "></i>
-                                
-                                <a href="https://linkedin.com/edgar-junior-torres-chafloque-005899251/" class="text-light me-3" title="LinkedIn"></a>
-                                <i class="fab fa-linkedin rounded-circle p-3 border "></i>
-                        </div>
-                        </div>
-                </div>
-                <div class="col-lg-7 mb-5">
-                        <form>
-                            <div class="input-container">
-                                <input type="text" placeholder="Nombre" class="glassmorphism">
-                            </div>
-                            <div class="input-container">
-                                <input type="email" placeholder="Email" class="glassmorphism">
-                            </div>
-                            <div class="input-container">
-                                <input type="text" placeholder="Asunto" class="glassmorphism">
-                            </div>
-                            <div class="input-container">
-                                <textarea placeholder="Mensaje" class="glassmorphism"></textarea>
-                            </div>
-                            <button class="button2">
-                                <span class="button-content">Enviar</span>
-                            </button>                              
-                        </form>
-                </div>
-           </div>
-    </section>
-    <button onclick="Function()" id="backToTopBtn" class="btn ">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-    <footer class="py-4 footer">
-        <div class="container text-center">
-          <div class="row">
-            <div class=" col-md-4">
-              <h5 class="text-light">Sobre Mí</h5>
-              <p>Hola, soy Edgar Torres, un desarrollador web apasionado por crear soluciones innovadoras y eficientes. ¡Bienvenido a mi portafolio!</p>
-              <hr class="my-4 text-light">   
+            <br><br>
+            <hr class="bg-light">
+            <p class="mb-0">&copy; 2025 Edgar Torres Chafloque - Todos los derechos reservados</p>
             </div>
-            <div class="col-md-4">
-              <h5 class="text-light">Enlaces</h5>
-              <ul class="list-unstyled">
-                <li><a href="#about" class=" text-decoration-none subrayado">Inicio</a></li>
-                <li><a href="#SobreMi" class=" text-decoration-none subrayado">Sobre Mi</a></li>
-                <li><a href="#projects" class=" text-decoration-none subrayado">Proyectos</a></li>
-                <li><a href="#skills" class="text-decoration-none subrayado">Habilidades</a></li>
-                <li><a href="#contact" class=" text-decoration-none subrayado">Contáctame</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <h5 class="text-light">Conéctate conmigo</h5>
-                    <div class="social-login-icons">
-                        <div class="socialcontainer">
-                        <div class="icon social-icon-1-1">
-                            <svg
-                            viewBox="0 0 512 512"
-                            height="1.7em"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="svgIcontwit"
-                            fill="white"
-                            >
-                            <path
-                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                            ></path>
-                            </svg>
-                        </div>
-                        <div class="social-icon-1">
-                            <svg
-                            viewBox="0 0 512 512"
-                            height="1.7em"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="svgIcontwit"
-                            fill="white"
-                            >
-                            <path
-                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                            ></path>
-                            </svg>
-                        </div>
-                        </div>
-                        <div class="socialcontainer">
-                        <div class="icon social-icon-2-2">
-                            <svg
-                            fill="white"
-                            class="svgIcon"
-                            viewBox="0 0 448 512"
-                            height="1.5em"
-                            xmlns="http://www.w3.org/2000/svg"
-                            >
-                            <path
-                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                            ></path>
-                            </svg>
-                        </div>
-                        <div class="social-icon-2">
-                            <svg
-                            fill="white"
-                            class="svgIcon"
-                            viewBox="0 0 448 512"
-                            height="1.5em"
-                            xmlns="http://www.w3.org/2000/svg"
-                            >
-                            <path
-                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                            ></path>
-                            </svg>
-                        </div>
-                        </div>
-                        <div class="socialcontainer">
-                        <div class="icon social-icon-3-3">
-                            <svg
-                            viewBox="0 0 384 512"
-                            fill="white"
-                            height="1.6em"
-                            xmlns="http://www.w3.org/2000/svg"
-                            >
-                            <path
-                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-                            ></path>
-                            </svg>
-                        </div>
-                        <div class="social-icon-3">
-                            <svg
-                            viewBox="0 0 384 512"
-                            fill="white"
-                            height="1.6em"
-                            xmlns="http://www.w3.org/2000/svg"
-                            >
-                            <path
-                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-                            ></path>
-                            </svg>
-                        </div>
-                        </div>
-                        <div class="socialcontainer">
-                        <div class="icon social-icon-4-4">
-                            <svg fill="white" viewBox="0 0 496 512" height="1.6em">
-                            <path
-                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                            ></path>
-                            </svg>
-                        </div>
-                        <div class="social-icon-4">
-                            <svg fill="white" viewBox="0 0 496 512" height="1.6em">
-                            <path
-                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                            ></path>
-                            </svg>
-                        </div>
-                        </div>
-                    </div>       
-            </div>
-          </div>
-          <br><br>
-          <hr class="bg-light">
-          <p class="mb-0">&copy; 2025 Edgar Torres Chafloque - Todos los derechos reservados</p>
-        </div>
-      </footer>
-</body>
+        </footer>
+    </body>
     <script src="JS/inicio.js"></script>
-   <script src="JS/index.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </html>

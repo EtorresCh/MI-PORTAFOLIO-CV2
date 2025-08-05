@@ -183,10 +183,9 @@ body {
   justify-content: center;
   text-align: center;
   color: white;
-  overflow: hidden; /* Evita desbordamientos */
+  overflow: hidden; 
 }
 
-/* Video ocupando todo el fondo */
 .video-fondo {
   position: absolute;
   top: 0;
